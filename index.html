@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ランダムポケモン</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>ランダムポケモン</h1>
+    <p class="subtitle">ボタンをクリックして、ランダムなポケモンを表示しよう！</p>
+
+    <div class="card" id="card">
+      <div class="card-inner" id="card-inner">
+        <div class="placeholder" id="placeholder">
+          <span>?</span>
+        </div>
+      </div>
+    </div>
+
+    <button id="fetch-btn" class="fetch-btn" type="button">
+      ランダム表示
+    </button>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
