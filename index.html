@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Alarm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1 class="title">Simple Alarm</h1>
+
+    <section class="clock" aria-live="polite">
+      <span id="clock">--:--:--</span>
+    </section>
+
+    <section class="add-form">
+      <input type="time" id="time-input" aria-label="アラーム時刻" />
+      <button type="button" id="add-btn">アラームを追加</button>
+    </section>
+
+    <section class="alarms">
+      <ul id="alarm-list" class="alarm-list"></ul>
+      <p id="empty-msg" class="empty-msg">アラームはまだありません</p>
+    </section>
+  </main>
+
+  <div id="ringing" class="ringing hidden" role="alertdialog" aria-modal="true">
+    <div class="ringing-card">
+      <p class="ringing-time" id="ringing-time">--:--</p>
+      <p class="ringing-label">アラーム!</p>
+      <button type="button" id="stop-btn">停止</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
